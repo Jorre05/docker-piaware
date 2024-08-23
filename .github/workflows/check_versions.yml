@@ -56,7 +56,7 @@ jobs:
     env:
       WORKFLOW_AUTH_TOKEN: ${{ secrets.GH_PAT_MIKENYE }}
       WORKFLOW_REPO: ${{ github.repository }}
-      WORKFLOW_FILE: deploy.yml
+      WORKFLOW_FILE: docker-publish.yml
       WORKFLOW_REASON: "triggered via check_versions.yml in ${{ github.repository }}"
     steps:
       - name: Trigger ${{ env.WORKFLOW_FILE }} in ${{ env.WORKFLOW_REPO }}
